@@ -11,7 +11,8 @@ class Admin extends CI_Controller {
         $this->load->model('Admin_model', 'admin');
         $this->load->library('form_validation');
         $this->session->keep_flashdata('error');
-        $this->session->keep_flashdata('success');
+        $this->session->keep_flashdata('success');//demo string 
+        echo"hello";
         // Your own constructor code
     }
 
