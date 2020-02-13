@@ -13,6 +13,7 @@ class Admin extends CI_Controller {
         $this->session->keep_flashdata('error');
         $this->session->keep_flashdata('success');//demo string 
         echo"hello";
+        echo"hello";
         // Your own constructor code
     }
 
