@@ -1,0 +1,15 @@
+
+<IfModule mod_rewrite.c>
+#    <IfModule mod_negotiation.c>
+#        Options -MultiViews
+#    </IfModule>
+
+  
+ Options +SymLinksIfOwnerMatch
+  RewriteEngine on
+    RewriteBase /delivera/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^(.*)$ index.php?request=$1 [L,QSA]
+</IfModule>
